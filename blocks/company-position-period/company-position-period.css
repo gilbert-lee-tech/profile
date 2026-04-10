@@ -1,0 +1,45 @@
+.company-position-period {
+  display: block;
+}
+
+.company-position-period .company-position-period-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.company-position-period .company-position-period-company {
+  font-weight: 900;
+  color: #0b4f9c;
+}
+
+.company-position-period .company-position-period-company a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.company-position-period .company-position-period-company a:hover,
+.company-position-period .company-position-period-company a:focus,
+.company-position-period .company-position-period-company a:focus-visible {
+  text-decoration: none;
+}
+
+.company-position-period .company-position-period-position {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.company-position-period .company-position-period-period {
+  opacity: 0.8;
+  margin-left: auto;
+  text-align: right;
+}
+
+@media (width >= 900px) {
+  .company-position-period .company-position-period-position {
+    font-size: 1.1rem;
+  }
+}
+

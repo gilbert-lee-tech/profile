@@ -2,7 +2,8 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 /**
  * Three Cards block: same content model as Cards (image + body per row), rendered as a list
- * with up to three cards per row on wide viewports; extra cards wrap, and short last rows stay centered.
+ * with up to three cards per row on wide viewports; extra cards wrap, and short last rows
+ * stay centered.
  * @param {Element} block The block element
  */
 export default function decorate(block) {

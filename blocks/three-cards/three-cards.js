@@ -7,6 +7,15 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
  * When the block enters the viewport, each card animates over 1s from translateY(-100px) and
  * opacity 0.5 to translateY(0) and opacity 1 (IntersectionObserver; CSS handles motion;
  * reduced motion is respected in three-cards.css).
+ *
+ * EDS sample block (Markdown table in document / `.md`):
+ *
+ * | three-cards | |
+ * | --- | --- |
+ * | ![Project screenshot](image1.jpg) | **First project** Short description of the work. |
+ * | ![Project screenshot](image2.jpg) | **Second project** Short description of the work. |
+ * | ![Project screenshot](image3.jpg) | **Third project** Short description of the work. |
+ *
  * @param {Element} block The block element
  */
 export default function decorate(block) {

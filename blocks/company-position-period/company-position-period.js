@@ -5,6 +5,16 @@
  *  - Second row: position
  *  - Third row: period
  * This decorator renders them in a single line with dedicated classes.
+ * The period element receives an `id` slug derived from its text (lowercase, hyphenated) so
+ * URLs can target it as a fragment (e.g. `#2020-2024`).
+ *
+ * EDS sample block (Markdown table in document / `.md`):
+ *
+ * | company-position-period |
+ * | --- |
+ * | [Acme Corp](https://example.com) |
+ * | Senior Software Engineer |
+ * | 2020 – 2024 |
  *
  * @param {Element} block The block element
  */

@@ -21,6 +21,16 @@
  *
  * If a key is authored multiple times, values are accumulated into an array.
  *
+ * EDS sample block (Markdown table in document / `.md`):
+ *
+ * | google-rich-results | |
+ * | --- | --- |
+ * | name | Jane Doe |
+ * | url | https://example.com/jane |
+ * | jobTitle | Software Engineer |
+ * | image | https://example.com/jane.jpg |
+ * | worksFor.name | Example Corp |
+ *
  * @param {Element} block The block element
  */
 function coerceValue(raw) {

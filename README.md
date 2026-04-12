@@ -10,11 +10,13 @@ Personal professional site built on [Adobe Edge Delivery Services](https://www.a
 
 ## Custom Edge Delivery blocks
 
-The following block extends the boilerplate beyond default components:
+The following blocks extend the boilerplate beyond default components:
 
 | Block | Description |
 | --- | --- |
 | `google-rich-results` | Accepts author-defined key–value pairs (including dotted paths for nested properties) and emits a single `application/ld+json` script. Defaults target Schema.org `Person`; values are coerced where appropriate (booleans, numbers, embedded JSON). Repeated keys are aggregated into arrays. |
+| `company-position-period` | Expects three rows (company name, position, period) and lays them out on one line with block-scoped classes. Company links use `target="_blank"` and `rel="noopener noreferrer"`. The period is given a URL fragment `id` derived from its text (slug) for deep linking. |
+| `three-cards` | Same content model as Cards (image plus body per row), rendered as a list with up to three cards per row on wide viewports; extra cards wrap and short last rows stay centered. Pictures are optimized via `createOptimizedPicture`; cards animate into view once (IntersectionObserver), with reduced-motion support in CSS. |
 
 ## Environments
 

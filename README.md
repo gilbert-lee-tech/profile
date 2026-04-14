@@ -18,6 +18,7 @@ The following blocks extend the boilerplate beyond default components:
 | `company-position-period` | Expects three rows (company name, position, period) and lays them out on one line with block-scoped classes. Company links use `target="_blank"` and `rel="noopener noreferrer"`. The period is given a URL fragment `id` derived from its text (slug) for deep linking. |
 | `three-cards` | Same content model as Cards (image plus body per row), rendered as a list with up to three cards per row on wide viewports; extra cards wrap and short last rows stay centered. Pictures are optimized via `createOptimizedPicture`; cards animate into view once (IntersectionObserver), with reduced-motion support in CSS. |
 | `left-right-card` | Same content model as Cards (image plus body per row), but each card renders as a single horizontal row at 80% width. Placing the image in the first column puts it on the left; placing it in the second column puts it on the right. Uses a 4/8 flex ratio between image and body. Cards have rounded corners and a drop shadow. |
+| `site-credit` | Footer strip that renders a single cell of rich text (supports inline links). Styled with the nav background and text colours; link hover uses a bottom-border underline animation. |
 
 ## Environments
 

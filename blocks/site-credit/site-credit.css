@@ -22,14 +22,14 @@ main > .section:has(.site-credit) > div {
 }
 
 .site-credit a:any-link {
-  color: #ff0000;
+  color: #f00;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
 
 .site-credit a:hover {
-  border-bottom-color: #ff0000;
+  border-bottom-color: #f00;
   text-decoration: none;
 }
 

@@ -208,8 +208,9 @@ Always follow this branching workflow when working on a GitHub issue:
    - Keep the description concise (3–5 words max), lowercase, hyphens only
 3. **Push the branch to remote** immediately so it exists on origin before any work begins
 4. **Do all work on that branch** — never modify files on `main`
-5. **Stop after completing the work** — do NOT commit or push; leave that to the developer
-6. **Create a PR** using `gh pr create` with the following description format:
+5. **Run `npm run lint`** before committing — if it fails, fix all errors before proceeding; do NOT commit with lint errors
+6. **Stop after completing the work** — do NOT commit or push; leave that to the developer
+7. **Create a PR** using `gh pr create` with the following description format:
 
 ```
 Fix #{issue-number}
@@ -225,6 +226,7 @@ git fetch origin
 git checkout -b issue-12-add-testimonial-block
 git push -u origin issue-12-add-testimonial-block
 # ... do the work ...
+npm run lint          # must pass before committing
 gh pr create --title "Add testimonial block" --body "Fix #12
 
 Test URLs:

@@ -19,6 +19,13 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  /* nav colors */
+  --nav-bg-color: #0f1117;
+  --nav-text-color: #e8eaf0;
+  --nav-link-hover-color: #7eb8f7;
+  --nav-dropdown-bg-color: #1c1f2b;
+  --nav-dropdown-border-color: #2e3244;
+
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;

@@ -37,6 +37,32 @@
   justify-content: center;
 }
 
+@keyframes card-slide-in {
+  from {
+    transform: translateX(30%);
+    opacity: 0.3;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .left-right-card > ul > li {
+    animation: card-slide-in ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .left-right-card > ul > li {
+      animation: none;
+    }
+  }
+}
+
 @media (width >= 900px) {
   .left-right-card > ul > li {
     flex-direction: row;

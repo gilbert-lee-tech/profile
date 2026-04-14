@@ -203,9 +203,9 @@ npm run lint:fix
 Always follow this branching workflow when working on a GitHub issue:
 
 1. **Fetch the issue details** to understand the scope of work
-2. **Create a branch** named after the issue — format: `issue-{number}/{short-description-in-kebab-case}`
-   - Example: issue #12 titled "Add testimonial block" → `issue-12/add-testimonial-block`
-   - Keep the description concise (3–5 words max), lowercase, hyphen-separated
+2. **Create a branch** named after the issue — format: `issue_{number}_{short_description_in_snake_case}`
+   - Example: issue #12 titled "Add testimonial block" → `issue_12_add_testimonial_block`
+   - Keep the description concise (3–5 words max), lowercase, underscores only
 3. **Push the branch to remote** immediately so it exists on origin before any work begins
 4. **Do all work on that branch** — never modify files on `main`
 5. **Stop after completing the work** — do NOT commit or push; leave that to the developer
@@ -213,16 +213,16 @@ Always follow this branching workflow when working on a GitHub issue:
 ```bash
 # Example for issue #12 "Add testimonial block"
 git fetch origin
-git checkout -b issue-12/add-testimonial-block
-git push -u origin issue-12/add-testimonial-block
+git checkout -b issue_12_add_testimonial_block
+git push -u origin issue_12_add_testimonial_block
 # ... do the work, then stop here ...
 # Developer will review, commit, and push manually
 ```
 
 ### Branch naming rules
-- Always prefix with `issue-{number}/`
-- Description in kebab-case, derived from the issue title
-- No uppercase, no spaces, no special characters
+- Always prefix with `issue_{number}_`
+- Description in snake_case, derived from the issue title
+- Lowercase letters and underscores only — no uppercase, no spaces, no hyphens, no slashes
 
 ---
 

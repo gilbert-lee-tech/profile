@@ -209,14 +209,27 @@ Always follow this branching workflow when working on a GitHub issue:
 3. **Push the branch to remote** immediately so it exists on origin before any work begins
 4. **Do all work on that branch** — never modify files on `main`
 5. **Stop after completing the work** — do NOT commit or push; leave that to the developer
+6. **Create a PR** using `gh pr create` with the following description format:
+
+```
+Fix #{issue-number}
+
+Test URLs:
+- Before: https://main--{repo}--{owner}.aem.live/
+- After: https://{branch}--{repo}--{owner}.aem.live/
+```
 
 ```bash
 # Example for issue #12 "Add testimonial block"
 git fetch origin
 git checkout -b issue_12_add_testimonial_block
 git push -u origin issue_12_add_testimonial_block
-# ... do the work, then stop here ...
-# Developer will review, commit, and push manually
+# ... do the work ...
+gh pr create --title "Add testimonial block" --body "Fix #12
+
+Test URLs:
+- Before: https://main--profile--gilbert-lee-tech.aem.page/
+- After: https://issue_12_add_testimonial_block--profile--gilbert-lee-tech.aem.live/"
 ```
 
 ### Branch naming rules

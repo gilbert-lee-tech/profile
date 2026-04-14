@@ -1,0 +1,40 @@
+main > .section:has(.site-credit) {
+  margin: 0;
+}
+
+main > .section:has(.site-credit) > div {
+  max-width: 100%;
+  padding: 0;
+}
+
+.site-credit {
+  background-color: var(--nav-bg-color);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.site-credit p {
+  margin: 0;
+  color: var(--nav-text-color);
+  font-size: var(--body-font-size-xs);
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.site-credit a:any-link {
+  color: #ff0000;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.site-credit a:hover {
+  border-bottom-color: #ff0000;
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .site-credit {
+    padding: 32px 200px;
+  }
+}

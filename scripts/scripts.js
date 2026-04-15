@@ -114,6 +114,18 @@ function decorateButtons(main) {
 }
 
 /**
+ * Prepends a visually-hidden skip navigation link to the body so keyboard
+ * users can bypass the header and jump straight to the main content.
+ */
+function buildSkipLink() {
+  const skip = document.createElement('a');
+  skip.href = '#main-content';
+  skip.className = 'skip-to-content';
+  skip.textContent = 'Skip to main content';
+  document.body.prepend(skip);
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -133,8 +145,12 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+
+  buildSkipLink();
+
   const main = doc.querySelector('main');
   if (main) {
+    main.id = 'main-content';
     decorateMain(main);
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);

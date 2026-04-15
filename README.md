@@ -2,6 +2,8 @@
 
 Personal professional site built on [Adobe Edge Delivery Services](https://www.aem.live/) (EDS), based on the [AEM boilerplate](https://github.com/adobe/aem-boilerplate/). The codebase implements a discoverable online résumé, structured data for search engines, and client-side enhancements using standard web technologies.
 
+[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen?logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/report?url=https%3A%2F%2Fmain--profile--gilbert-lee-tech.aem.live%2F)
+
 ## Objectives
 
 - **Professional presence and SEO** — Publish résumé content on the open web with search-friendly markup so recruiters and hiring teams can find accurate, up-to-date information.

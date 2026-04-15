@@ -238,6 +238,7 @@ Test URLs:
 - Always prefix with `issue-{number}-`
 - Description in kebab-case, derived from the issue title
 - Lowercase letters and hyphens only — no uppercase, no spaces, no underscores, no slashes
+- Keep the description part (after `issue-{number}-`) **under 24 characters** — AEM preview subdomains have a 63-character DNS limit; longer branch names will fail to load
 
 ---
 

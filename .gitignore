@@ -8,6 +8,9 @@ helix-importer-ui
 *.bak
 .idea
 
+# Claude Code — local settings are machine-specific
+.claude/settings.local.json
+
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md

@@ -18,6 +18,12 @@
  *
  * @param {Element} block The block element
  */
+function decorateExternalLink(link) {
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
+  link.setAttribute('aria-label', `${link.textContent.trim()} (opens in new tab)`);
+}
+
 export default function decorate(block) {
   const rows = [...block.children];
   if (!rows.length) return;
@@ -34,10 +40,7 @@ export default function decorate(block) {
       company.append(companyRow.firstChild);
     }
     const companyLink = company.querySelector('a[href]');
-    if (companyLink) {
-      companyLink.setAttribute('target', '_blank');
-      companyLink.setAttribute('rel', 'noopener noreferrer');
-    }
+    if (companyLink) decorateExternalLink(companyLink);
     wrapper.append(company);
   }
 

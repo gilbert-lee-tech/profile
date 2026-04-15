@@ -172,6 +172,12 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* buttons */
 p.button-wrapper {
   margin: 12px 0;

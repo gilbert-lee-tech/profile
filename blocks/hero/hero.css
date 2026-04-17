@@ -5,6 +5,7 @@
 
 .hero {
   position: relative;
+  overflow: hidden;
   padding: 40px 24px;
   min-height: 300px;
 }
@@ -19,9 +20,10 @@
 .hero picture {
   position: absolute;
   z-index: -1;
-  inset: 0;
+  inset: -30% 0;
   object-fit: cover;
   box-sizing: border-box;
+  will-change: transform;
 }
 
 .hero img {

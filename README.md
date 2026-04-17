@@ -22,6 +22,7 @@ The following blocks extend the boilerplate beyond default components:
 | `left-right-card` | Same content model as Cards (image plus body per row), but each card renders as a single horizontal row at 80% width. Placing the image in the first column puts it on the left; placing it in the second column puts it on the right. Uses a 4/8 flex ratio between image and body. Cards have rounded corners and a drop shadow. |
 | `site-credit` | Footer strip that renders a single cell of rich text (supports inline links). Styled with the nav background and text colours; link hover uses a bottom-border underline animation. |
 | `certification-badge` | Renders a list of certifications. Each row auto-detects up to three column types in any authored order: a link (styled as a green "Verified ✓" badge for `credential/verify` URLs, or an outlined "View Course" button), an image (optimized badge icon), and a name (plain text). |
+| `hero` | Full-width hero section with a parallax scrolling background image. The picture translates at 40% of the scroll speed for a depth effect. Skipped automatically when the user prefers reduced motion. |
 
 ## Environments
 
